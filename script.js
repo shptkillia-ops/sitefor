@@ -37,7 +37,7 @@ document.getElementById("sendBtn").onclick = () => {
 
   
   const BOT_TOKEN = "8685729652:AAGbncY0a7Jp0ya-g-vB3bTxH6ZzBCo3tmg";
-const CHAT_ID = "8685729652";
+const CHAT_ID = "1894102453";
 
 fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
     method: "POST",
@@ -46,7 +46,7 @@ fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
     },
     body: JSON.stringify({
         chat_id: CHAT_ID,
-        text: "❤️ Новая заявка!\n📅 Дата: ${date}\n🕒 Время: ${time}"
+        text: `❤️ Новая заявка!\n📅 Дата: ${date}\n🕒 Время: ${time}`
     })
 });
 
